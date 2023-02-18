@@ -1,12 +1,5 @@
 <script setup>
-// componentの処理内容をjsで記述
-// import { ref } from 'vue'
-
-// defineProps({
-//   msg: String,
-// })
-
-// const count = ref(0)
+console.log('Users.vueのファイルをインポートしました')
 </script>
 
 <template>
@@ -21,7 +14,7 @@
     </p>
   </div> -->
   <div>
-    <p>HelloWorld</p>
+    <p>This is Users</p>
   </div>
 </template>
 
