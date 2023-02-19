@@ -9,33 +9,28 @@
 </template>
 
 <script>
-import { gql } from '@apollo/client'
+import gql from 'graphql-tag'
 
 const USERS_QUERY = gql`
-  query users {
-    users {
-      id
-      name
-      email
-    }
+query users{
+  users {
+    name
+    email
   }
-`
+}`
 
 export default {
-  name: 'Users',
-  data() {
+  name: 'users',
+  data () {
     return {
-      users: [],
+      users: []
     }
   },
   apollo: {
     users: {
-      query: USERS_QUERY,
-      // 結果が返ってきたときに実行される処理
-      update: (data) => {
-        this.users = data.users
-      },
-    },
-  },
+      query: USERS_QUERY
+    }
+  }
 }
+
 </script>

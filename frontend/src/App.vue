@@ -6,7 +6,6 @@ import Users from './components/Users.vue';
 export default {
   name: "App",
   components: {
-    HelloWorld,
     Users
   }
 };
@@ -14,7 +13,6 @@ export default {
 
 <template>
   <!--フロントエンドで共通しているview部分をここで記述-->
-  <HelloWorld msg="Vite + Vue"></HelloWorld>
   <Users></Users>
 </template>
 
