@@ -1,7 +1,15 @@
-<script setup>
+<script>
 // componentをこの中で呼び出す
 import HelloWorld from './components/HelloWorld.vue'
 import Users from './components/Users.vue';
+
+export default {
+  name: "App",
+  components: {
+    HelloWorld,
+    Users
+  }
+};
 </script>
 
 <template>
