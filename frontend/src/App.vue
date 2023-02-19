@@ -1,19 +1,22 @@
-<script setup>
+<script>
+// componentをこの中で呼び出す
 import HelloWorld from './components/HelloWorld.vue'
+import Users from './components/Users.vue';
+
+export default {
+  name: "App",
+  components: {
+    Users
+  }
+};
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <!--フロントエンドで共通しているview部分をここで記述-->
+  <Users></Users>
 </template>
 
+<!---同じくフロントエンドで共通しているviewのスタイルをここで記述-->
 <style scoped>
 .logo {
   height: 6em;
