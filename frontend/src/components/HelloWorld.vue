@@ -1,15 +1,13 @@
 <template>
   <div>
-    <p>{{ message }}</p>
-    <input v-model="message">
+    <p>{{ msg }}</p>
+    <input v-model="msg">
   </div>
 </template>
 
 <script>
 export default {
   name: "amema",
-  data: () => ({
-    message: "amema"
-  })
+  props: ['msg'], //親コンポーネントからmessageを受け取る
 };
 </script>
