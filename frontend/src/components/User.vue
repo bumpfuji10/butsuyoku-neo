@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>User</h1>
-    <p>users:</p>
+    <h1>ユーザー一覧</h1>
+    <p>利用者:</p>
     <p>{{ users }}</p>
     <button type="submit" @click="fetchUsers">fetchUsers</button>
   </div>
