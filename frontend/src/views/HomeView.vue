@@ -1,18 +1,14 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <User />
-  </div>
+  <UsersIndex />
 </template>
 
 <script>
-// @ is an alias to /src
-import User from '../components/User.vue';
+import UsersIndex from '@/pages/UsersIndex.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    User
+    UsersIndex
   }
 }
 </script>
