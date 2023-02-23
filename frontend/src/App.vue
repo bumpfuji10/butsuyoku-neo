@@ -2,7 +2,9 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">Gymnastics Tipsとは</router-link> |
+      <router-link to="/users">登録者一覧</router-link> |
+      <router-link to="/sign_up">登録</router-link>
     </nav>
     <router-view/>
   </div>
