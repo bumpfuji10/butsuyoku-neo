@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>
-      会員登録
+      会員登録ページ
     </h1>
   </div>
 </template>
