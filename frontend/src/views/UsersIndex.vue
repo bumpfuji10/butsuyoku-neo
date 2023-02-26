@@ -1,5 +1,9 @@
 <template>
-  <User />
+  <div>
+    <h1>ユーザー一覧</h1>
+    <p>利用者:</p>
+    <User />
+  </div>
 </template>
 
 <script>

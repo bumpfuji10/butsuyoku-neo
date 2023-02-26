@@ -1,9 +1,7 @@
 <template>
   <div>
-    <h1>ユーザー一覧</h1>
-    <p>利用者:</p>
     <p>{{ users }}</p>
-    <button type="submit" @click="fetchUsers">fetchUsers</button>
+    <button type="submit" id="fetchUsers" @click="fetchUsers">会員情報を取得する</button>
   </div>
 </template>
 
@@ -30,3 +28,16 @@ export default {
     }
 };
 </script>
+
+<style>
+#fetchUsers {
+  padding: 10px;
+  font-size: 30px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+#fetchUsers:hover {
+  color: blue;
+  cursor: pointer;
+}
+</style>
