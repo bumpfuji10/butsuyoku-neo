@@ -3,7 +3,7 @@
     <h1>ユーザー一覧</h1>
     <p>利用者:</p>
     <p>{{ users }}</p>
-    <button type="submit" @click="fetchUsers">fetchUsers</button>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4" @click="fetchUsers">fetchUsers</button>
   </div>
 </template>
 
